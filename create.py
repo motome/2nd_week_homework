@@ -8,3 +8,13 @@ def create_Customer_list():
 
 if __name__ == "__main__":
     create_Customer_list()
+
+from db_config import Customer_list
+
+
+def display_all():
+    for cld in Customer_list.select():
+        print(cld.id, cld.customer, cld.age, cld.pub_date)
+
+if __name__ == "__main__":
+    display_all()
