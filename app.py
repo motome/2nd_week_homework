@@ -6,6 +6,7 @@ print("[A]dd: Add new user")
 print("[Q]uit: Quit The Application")
 print("======================================")
 
+
 def order_selection():
     select = input(
         "=======================================\n"
