@@ -8,10 +8,6 @@ from peewee import Model, IntegerField, CharField, TextField, TimestampField
 # .envの読み込み
 load_dotenv()
 
-# ①実行したSQLをログで出力する設定
-logger = logging.getLogger("peewee")
-logger.addHandler(logging.StreamHandler())
-logger.setLevel(logging.DEBUG)
 
 # データベースへの接続設定
 # db = SqliteDatabase("peewee_db.sqlite")  # SQLite固定の場合
