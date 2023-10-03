@@ -8,24 +8,16 @@ print("======================================")
 
 
 def order_selection():
-    select = input(
-        "=======================================\n"
-        "Please select your order, S, A, or Q \n"
-        "==========================================\n"
-        ">"
-    )
+    select = input("your command >")
     return select
 
 
 def display_all():
-    print("Your command > S ")
     for customer in Customer_list.select():
         print(f"Customer's Name: {customer.customer} Age: {customer.age}")
 
 
 def add_data():
-    print("Your command > A ")
-
     user_name = input("New user name >")
     user_age = input("New user age >")
     new_customer = Customer_list(customer=user_name, age=user_age)
@@ -50,12 +42,10 @@ def main():
             continue
 
         elif select == "Q":
-            print("Your command > Q ")
             finish_operation()
             break
 
         else:
-            print(f"Your command > {select}")
             print("command undefined")
 
 
